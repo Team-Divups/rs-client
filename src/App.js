@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
     <Footer/>
+    <h1>React</h1>
     </div>
   );
 }
