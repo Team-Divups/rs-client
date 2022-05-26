@@ -25,7 +25,11 @@ export const Button2 = styled.div`
     font-weight: bold;
     font-family: 'Mulish', sans-serif;
 `
-
+export const Container=styled.div`
+    padding:10px;
+    width:90%;
+    height:100%;
+`
 export const ContainerHeading = styled.p`
     font-size: 18px;
     font-weight: bold;
@@ -39,8 +43,8 @@ export const ContainerText = styled.p`
 
 export const ContainerWrap = styled.div`
     background:#F6F6F6;
-    margin-top:30px ;
-    padding:5px 10px 5px 20px
+    margin-top:40px ;
+    padding:10px 10px 5px 20px
 `
 
 export const ContainerBox = styled.div`

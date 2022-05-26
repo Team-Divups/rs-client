@@ -21,7 +21,7 @@ const AddUser = () => {
     </ContainerWrap>
      
     <ContainerBox>
-       <ContainerHeading style={{fontSize:'15px'}}>Add New User</ContainerHeading>
+       <ContainerHeading style={{fontSize:'15px'}}>Invite New User</ContainerHeading>
 
        <InputBox>
        <Form>
@@ -42,16 +42,16 @@ const AddUser = () => {
             <Form.Control as="textarea" rows={1} />
         </Form.Group><br/>
         <Form.Group controlId="form.Textarea">
-            <Form.Label><ContainerText>Role</ContainerText></Form.Label>
-            <Form.Control as="textarea" rows={1} />
+            <Form.Label><ContainerText>Special Comments</ContainerText></Form.Label>
+            <Form.Control as="textarea" rows={5} />
         </Form.Group>
       </Form>
        </InputBox>
 
       <br/>
     
-      <Button1 size="sm">Save</Button1>
-      <Button2 size="sm">Discard</Button2>
+      <Button1 size="sm">Invite</Button1>
+      <Button2 size="sm">Back</Button2>
 
     </ContainerBox>
     </Container>

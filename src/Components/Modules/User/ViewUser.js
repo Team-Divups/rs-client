@@ -12,7 +12,7 @@ import {
 } from './UserStyles';
 
 
-const AddUser = () => {
+const ViewUser = () => {
   return(
     <>
     <Container>
@@ -21,7 +21,7 @@ const AddUser = () => {
     </ContainerWrap>
      
     <ContainerBox>
-       <ContainerHeading style={{fontSize:'15px'}}>Add New User</ContainerHeading>
+       <ContainerHeading style={{fontSize:'15px'}}>View User</ContainerHeading>
 
        <InputBox>
        <Form>
@@ -31,10 +31,6 @@ const AddUser = () => {
         </Form.Group><br/>
         <Form.Group controlId="form.Email">
             <Form.Label><ContainerText>User Email</ContainerText></Form.Label>
-            <Form.Control as="textarea" rows={1} />
-        </Form.Group><br/>
-        <Form.Group controlId="form.Email">
-            <Form.Label><ContainerText>Password</ContainerText></Form.Label>
             <Form.Control as="textarea" rows={1} />
         </Form.Group><br/>
         <Form.Group controlId="form.Textarea">
@@ -59,4 +55,4 @@ const AddUser = () => {
   );
 };
 
-export default AddUser;
+export default ViewUser;

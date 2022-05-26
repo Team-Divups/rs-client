@@ -12,7 +12,7 @@ import {
 } from './UserStyles';
 
 
-const AddUser = () => {
+const EditUser = () => {
   return(
     <>
     <Container>
@@ -50,7 +50,7 @@ const AddUser = () => {
 
       <br/>
     
-      <Button1 size="sm">Save</Button1>
+      <Button1 size="sm">Update</Button1>
       <Button2 size="sm">Discard</Button2>
 
     </ContainerBox>
@@ -59,4 +59,4 @@ const AddUser = () => {
   );
 };
 
-export default AddUser;
+export default EditUser;
