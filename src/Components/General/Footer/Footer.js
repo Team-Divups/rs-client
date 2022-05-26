@@ -49,11 +49,12 @@ return (
 		</Column>
 
 		</Row>
-	</Container>
+	
 	<br/>
 	<hr/>
 	<br/>
 	<FooterLink style={{justifyContent:'center',display:'flex'}}>@2022 Copyright: BizStat.com</FooterLink>
+	</Container>
 	</Box>		
 	</>
 );
