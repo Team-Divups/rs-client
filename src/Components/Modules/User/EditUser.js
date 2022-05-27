@@ -21,7 +21,7 @@ const EditUser = () => {
     </ContainerWrap>
      
     <ContainerBox>
-       <ContainerHeading style={{fontSize:'15px'}}>Add New User</ContainerHeading>
+       <ContainerHeading style={{fontSize:'15px'}}>Edit User</ContainerHeading>
 
        <InputBox>
        <Form>

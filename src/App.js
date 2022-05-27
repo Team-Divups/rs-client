@@ -1,8 +1,8 @@
 import {Row,Col } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Footer from './Components/General/Footer/Footer';
 import Sidebar from './Components/General/Sidebar/SideBar';
 import AddUser from "./Components/Modules/User/AddUser";
+import Footer from "./Components/General/Footer/Footer";
 
 function App() {
   return (
