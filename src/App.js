@@ -5,7 +5,7 @@ import New from './Pages/New/New';
 import List from './Pages/List/List';
 import Single from './Pages/Single/Single';
 import { userInputs , productInputs } from './formSource';
-// import "./Style/dark.scss";
+import "./Style/dark.scss";
 
 import {
   BrowserRouter as Router,
