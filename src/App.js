@@ -1,23 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
+import New from './Pages/New/New';
+import List from './Pages/List/List';
+import Single from './Pages/Single/Single';
+import { userInputs , productInputs } from './formSource';
+// import "./Style/dark.scss";
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  //Link
+} from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<Home/>}/>
+            <Route path='login' element={<Login/>}/>
+
+            <Route path='users'>
+              <Route index element={<List/>}/>
+              <Route path='new' element={<New inputs={userInputs} title='Add new User' />}/>
+              <Route path=':userID' element={<Single/>}/>
+            </Route>
+
+            <Route path='products'>
+              <Route index element={<List/>}/>
+              <Route path='new' element={<New inputs={productInputs} title="Add new product" />}/>
+              <Route path=':productID' element={<Single/>}/>
+            </Route>
+
+          </Route>
+        </Routes>
+      </Router>
+    
     </div>
   );
 }
