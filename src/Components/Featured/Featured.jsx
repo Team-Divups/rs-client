@@ -4,7 +4,6 @@ import 'react-circular-progressbar/dist/styles.css';
 
 
 
-
 const Featured = () => {
   return (
     <div className='featured'>
