@@ -1,12 +1,38 @@
 import './App.css';
-import Footer from './Components/ Footer/Footer';
-
-
+import Home from './Pages/Home/Home';
+import Login from './Pages/Login/Login';
+import New from './Pages/New/New';
+import List from './Pages/List/List';
+import Single from './Pages/Single/Single';
+import { userInputs , productInputs } from './formSource';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 function App() {
   return (
     <div className="App">
-    <Footer/>
-    <h1>React</h1>
+      <Router>
+        <Routes>
+          <Route path='/'>
+            <Route index element={<Home/>}/>
+            <Route path='login' element={<Login/>}/>
+
+            <Route path='users'>
+              <Route index element={<List/>}/>
+              <Route path='new' element={<New inputs={userInputs} title='Add new User' />}/>
+              <Route path=':userID' element={<Single/>}/>
+            </Route>
+
+            <Route path='products'>
+              <Route index element={<List/>}/>
+              <Route path='new' element={<New inputs={productInputs} title="Add new product" />}/>
+              <Route path=':productID' element={<Single/>}/>
+            </Route>
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
