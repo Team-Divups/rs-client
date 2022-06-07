@@ -7,7 +7,6 @@ import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import PreviewOutlinedIcon from '@mui/icons-material/PreviewOutlined';
 import { Link } from 'react-router-dom';
-import { Button } from '@mui/material';
 
 
 
@@ -41,12 +40,10 @@ const Datatable = () => {
     <div className='dataTable'>
         <div className="dataTableTitle">
             Add new user
-        </div>
             <Link to='/users/new'  className="link">
-              <div style={{paddingLeft:'95%'}}>
-              <Button style={{flex:1,marginBottom:'20px'}}>Add + </Button>
-              </div>
+                Add New +
             </Link>
+        </div>
         <DataGrid
             rows={data}
             columns={userColumns.concat(actionColumn)}

@@ -184,6 +184,29 @@ export default function MiniDrawer() {
             </ListItem>
             </Link>
 
+            <Link to='/subscription' style={{textDecoration: 'none'}}>
+            <ListItem  disablePadding sx={{ display: 'block' }}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <AccountCircleIcon/>
+                </ListItemIcon>
+                <ListItemText primary={'Subscription'} sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+            </Link>
+
 
 
 

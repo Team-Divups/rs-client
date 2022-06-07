@@ -5,12 +5,16 @@ import New from './Pages/New/New';
 import List from './Pages/List/List';
 import Single from './Pages/Single/Single';
 import { userInputs , productInputs } from './formSource';
+import "./Style/dark.scss";
 
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  //Link
 } from "react-router-dom";
+
+
 function App() {
   return (
     <div className="App">
@@ -31,9 +35,17 @@ function App() {
               <Route path='new' element={<New inputs={productInputs} title="Add new product" />}/>
               <Route path=':productID' element={<Single/>}/>
             </Route>
+
+            <Route path='subscription'>
+              <Route index element={<List   title="Subscription"/>}/>
+              <Route path='new' element={<New inputs={productInputs} title="Add new subscription" />}/>
+              <Route path=':subID' element={<Single/>}/>
+            </Route>
+
           </Route>
         </Routes>
       </Router>
+    
     </div>
   );
 }
